@@ -290,7 +290,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNPaintBoardLibrary;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Helpers/RNPaintBoardLibrary-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNPaintBoardLibrary-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -311,7 +311,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNPaintBoardLibrary;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Helpers/RNPaintBoardLibrary-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNPaintBoardLibrary-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
