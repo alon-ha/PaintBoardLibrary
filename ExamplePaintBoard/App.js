@@ -6,24 +6,56 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
+import { View, Text, Button } from 'react-native-ui-lib';
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  clear = () => {
+
+  }
+
+  load = () => {
+
+  }
+
+  save = () => {
+
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+      <View flex>
+        <Text
+          text30
+          dark20>
+          Draw Something:
+      </Text>
+        <View flex>
+          <Button
+            onPress={this.clear}
+            label="Clear"
+            text30
+            dark20
+            bg-red70
+          />
+          <Button
+            onPress={this.load}
+            label="Load"
+            text30
+            dark20
+            bg-red70
+          />
+          <Button
+            onPress={this.save}
+            label="Save"
+            text30
+            dark20
+            bg-red70
+          />
+        </View>
       </View>
     );
   }
@@ -35,15 +67,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });

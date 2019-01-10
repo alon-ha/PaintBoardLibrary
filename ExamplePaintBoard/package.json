@@ -7,9 +7,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.6.1",
-    "react-native": "0.57.508",
-    "react-native-paint-board-library" : "1.0.0"
+    "react": "15.4.0",
+    "react-native": "^0.57.8",
+    "react-native-paint-board-library": "1.0.1",
+    "react-native-ui-lib": "^3.13.2",
+    "react-native-windows": "0.41.0-rc.1"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
