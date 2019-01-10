@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "RNPaintBoardLibrary-Swift.h"
 #import <React/RCTViewManager.h>
 
