@@ -9,11 +9,20 @@
 import Foundation
 import UIKit
 
-class PaintBoard: UIView {
+@objc class PaintBoard: UIView {
     fileprivate var lines = [Line]()
     fileprivate var lastPoint: CGPoint!
     fileprivate let persistence: DrawingPersistencing
     fileprivate let drawer: Drawing
+    
+    // default init in objective c will not go to the below init in swift..
+    // taht's why I created this init function
+    @objc init(backgorundColor: UIColor) {
+        self.drawer = Drawer()
+        self.persistence = DrawingPersistence()
+        super.init(frame: .zero)
+        self.backgroundColor = backgorundColor
+    }
     
     init(drawer: Drawing = Drawer(),
          persistence: DrawingPersistencing = DrawingPersistence()) {
@@ -47,10 +56,18 @@ class PaintBoard: UIView {
         lastPoint = point
         drawer.draw(line: line)
     }
+    
+    @objc func cool() {
+        clear()
+        let lines = persistence.getLines()
+        guard !lines.isEmpty else { return }
+        self.lines = lines
+        drawer.draw(lines: lines)
+    }
 }
 
-extension PaintBoard {
-    func load() {
+@objc extension PaintBoard {
+    @objc func load() {
         clear()
         let lines = persistence.getLines()
         guard !lines.isEmpty else { return }
@@ -58,12 +75,12 @@ extension PaintBoard {
         drawer.draw(lines: lines)
     }
     
-    func clear() {
+    @objc func clear() {
         drawer.clear()
         self.lines = []
     }
     
-    func save() {
+    @objc func save() {
         guard !lines.isEmpty else { return }
         persistence.save(lines: lines)
     }

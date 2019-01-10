@@ -15,6 +15,8 @@
 		ADF5965821E77CB700FE1C17 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5965721E77CB700FE1C17 /* Drawer.swift */; };
 		ADF5965A21E77CC000FE1C17 /* PaintBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5965921E77CC000FE1C17 /* PaintBoard.swift */; };
 		ADF5965C21E77CCD00FE1C17 /* DrawerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5965B21E77CCD00FE1C17 /* DrawerConfiguration.swift */; };
+		ADF5965F21E78A5100FE1C17 /* PaintBoardBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5965E21E78A5100FE1C17 /* PaintBoardBridge.m */; };
+		ADF5966121E78B7200FE1C17 /* RNTPaintBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5966021E78B7200FE1C17 /* RNTPaintBoardManager.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNPaintBoardLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNPaintBoardLibrary.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		ADF5965921E77CC000FE1C17 /* PaintBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintBoard.swift; sourceTree = "<group>"; };
 		ADF5965B21E77CCD00FE1C17 /* DrawerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerConfiguration.swift; sourceTree = "<group>"; };
 		ADF5965D21E77D2B00FE1C17 /* RNPaintBoardLibrary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNPaintBoardLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADF5965E21E78A5100FE1C17 /* PaintBoardBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintBoardBridge.m; sourceTree = "<group>"; };
+		ADF5966021E78B7200FE1C17 /* RNTPaintBoardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTPaintBoardManager.m; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNPaintBoardLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPaintBoardLibrary.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNPaintBoardLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPaintBoardLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				ADF5965921E77CC000FE1C17 /* PaintBoard.swift */,
+				ADF5965E21E78A5100FE1C17 /* PaintBoardBridge.m */,
+				ADF5966021E78B7200FE1C17 /* RNTPaintBoardManager.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,7 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF5965F21E78A5100FE1C17 /* PaintBoardBridge.m in Sources */,
 				ADF5965221E77CA200FE1C17 /* DrawingPersistence.swift in Sources */,
+				ADF5966121E78B7200FE1C17 /* RNTPaintBoardManager.m in Sources */,
 				ADF5964E21E77C5800FE1C17 /* EasyViews.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNPaintBoardLibrary.m in Sources */,
 				ADF5965C21E77CCD00FE1C17 /* DrawerConfiguration.swift in Sources */,
