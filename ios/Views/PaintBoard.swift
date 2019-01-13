@@ -56,14 +56,6 @@ import UIKit
         lastPoint = point
         drawer.draw(line: line)
     }
-    
-    @objc func cool() {
-        clear()
-        let lines = persistence.getLines()
-        guard !lines.isEmpty else { return }
-        self.lines = lines
-        drawer.draw(lines: lines)
-    }
 }
 
 @objc extension PaintBoard {
