@@ -7,25 +7,25 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, requireNativeComponent, findNodeHandle } from 'react-native';
+import { StyleSheet, requireNativeComponent, findNodeHandle, NativeModules } from 'react-native';
 import { View, Text, Button } from 'react-native-ui-lib';
 const RNTPaintBoard = requireNativeComponent('RNTPaintBoard')
-
+const paintBoardManager = NativeModules.RNTPaintBoardManager
 
 type Props = {};
 
 export default class App extends Component<Props> {
 
   clear = () => {
-    RNTPaintBoard.clear(findNodeHandle(this))
+    paintBoardManager.clear()
   }
 
   load = () => {
-
+    paintBoardManager.load()
   }
 
   save = () => {
-
+    paintBoardManager.save()
   }
 
   render() {

@@ -12,15 +12,22 @@
 #import <React/RCTUIManager.h>
 
 @interface RNTPaintBoardManager : RCTViewManager
+@property (nonatomic, strong) PaintBoard *paintBoard;
 @end
 
 @implementation RNTPaintBoardManager
+@synthesize paintBoard;
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-    return [[PaintBoard alloc] initWithIrrelevantParameter:YES];
+    if (!self.paintBoard) {
+        self.paintBoard = [[PaintBoard alloc] initWithIrrelevantParameter:YES];
+        return self.paintBoard;
+    }
+    
+    return self.paintBoard;
 }
 
 + (BOOL)requiresMainQueueSetup {
@@ -31,17 +38,16 @@ RCT_EXPORT_MODULE()
     return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(clear: (nonnull NSNumber *)reactTag) {
-    [self.bridge.uiManager addUIBlock:^(RCTUIManager *uiManager, NSDictionary<NSNumber *, UIView *> *viewRegistry) {
-        UIView *view = viewRegistry[reactTag];
-        if (![view isKindOfClass:[PaintBoard class]]) {
-            RCTLog(@"expecting UIView, got: %@", view);
-        }
-        else {
-            PaintBoard *paintBoard = (PaintBoard *)view;
-            [paintBoard clear];
-        }
-    }];
+RCT_EXPORT_METHOD(clear) {
+    [self.paintBoard clear];
+}
+
+RCT_EXPORT_METHOD(save) {
+    [self.paintBoard save];
+}
+
+RCT_EXPORT_METHOD(load) {
+    [self.paintBoard load];
 }
 
 @end
