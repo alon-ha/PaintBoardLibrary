@@ -9,7 +9,7 @@
 import Foundation
 
 @objc(RNTPaintBoardManager)
-class RNTPaintBoardManager: RCTViewManager {
+class PaintBoardManager: RCTViewManager {
     override func view() -> UIView! {
         return PaintBoard(backgorundColor: .white)
     }
