@@ -17,12 +17,11 @@ import UIKit
     
     // default init in objective c will not go to the below init in swift..
     // taht's why I created this init function
-    @objc init(backgorundColor: UIColor) {
+    @objc init(irrelevantParameter: Bool) {
         self.drawer = Drawer()
         self.persistence = DrawingPersistence()
         super.init(frame: .zero)
         self.drawer.set(board: self)
-        self.backgroundColor = backgorundColor
     }
     
     init(drawer: Drawing = Drawer(),

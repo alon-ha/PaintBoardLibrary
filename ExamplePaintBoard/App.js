@@ -26,53 +26,46 @@ export default class App extends Component<Props> {
   save = () => {
 
   }
-
+  
   render() {
     return (
-      <RNTPaintBoard style={{ flex: 1 }} />
+      <View flex useSafeArea>
+        <View padding-24>
+          <Text
+            text30
+            dark20
+          >
+            Draw Something:
+      </Text>
+        </View>
+        <RNTPaintBoard style={styles.wrapper} />
+        <View padding-24 row>
+          <Button
+            onPress={this.clear}
+            label="Clear"
+            text40
+            dark20
+            bg-blue50
+          />
+          <Button
+            onPress={this.load}
+            label="Load"
+            text40
+            dark20
+            bg-blue50
+          />
+          <Button
+            onPress={this.save}
+            label="Save"
+            text40
+            dark20
+            bg-blue50
+          />
+        </View>
+      </View>
     );
   }
 }
-
-//   render() {
-//     return (
-//       <View flex useSafeArea>
-//         <View padding-24>
-//           <Text
-//             text30
-//             dark20
-//           >
-//             Draw Something:
-//       </Text>
-//         </View>
-//         <RNTPaintBoard style={{ flex: 1 }} />
-//         <View padding-24 row>
-//           <Button
-//             onPress={this.clear}
-//             label="Clear"
-//             text40
-//             dark20
-//             bg-blue50
-//           />
-//           <Button
-//             onPress={this.load}
-//             label="Load"
-//             text40
-//             dark20
-//             bg-blue50
-//           />
-//           <Button
-//             onPress={this.save}
-//             label="Save"
-//             text40
-//             dark20
-//             bg-blue50
-//           />
-//         </View>
-//       </View>
-//     );
-//   }
-// }
 
 
 const styles = StyleSheet.create({
@@ -82,7 +75,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  paintBoard: {
-    height: 300
+  wrapper: {
+    flex: 1, alignItems: "center", justifyContent: "center"
   }
 });

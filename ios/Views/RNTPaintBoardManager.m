@@ -19,7 +19,7 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-    return [[PaintBoard alloc] initWithBackgorundColor:UIColor.whiteColor];
+    return [[PaintBoard alloc] initWithIrrelevantParameter:YES];
 }
 
 @end
