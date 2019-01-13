@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD148D3621EB40A90036A887 /* RNTPaintBoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD148D3521EB40A90036A887 /* RNTPaintBoardManager.swift */; };
 		ADF5964E21E77C5800FE1C17 /* EasyViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5964D21E77C5800FE1C17 /* EasyViews.swift */; };
 		ADF5965021E77C9800FE1C17 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5964F21E77C9800FE1C17 /* ColorPalette.swift */; };
 		ADF5965221E77CA200FE1C17 /* DrawingPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5965121E77CA200FE1C17 /* DrawingPersistence.swift */; };
@@ -16,7 +17,6 @@
 		ADF5965A21E77CC000FE1C17 /* PaintBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5965921E77CC000FE1C17 /* PaintBoard.swift */; };
 		ADF5965C21E77CCD00FE1C17 /* DrawerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF5965B21E77CCD00FE1C17 /* DrawerConfiguration.swift */; };
 		ADF5966121E78B7200FE1C17 /* RNTPaintBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF5966021E78B7200FE1C17 /* RNTPaintBoardManager.m */; };
-		B3E7B58A1CC2AC0600A0062D /* RNPaintBoardLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNPaintBoardLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNPaintBoardLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPaintBoardLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD148D3521EB40A90036A887 /* RNTPaintBoardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNTPaintBoardManager.swift; sourceTree = "<group>"; };
 		ADF5964D21E77C5800FE1C17 /* EasyViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyViews.swift; sourceTree = "<group>"; };
 		ADF5964F21E77C9800FE1C17 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		ADF5965121E77CA200FE1C17 /* DrawingPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingPersistence.swift; sourceTree = "<group>"; };
@@ -43,8 +44,6 @@
 		ADF5965B21E77CCD00FE1C17 /* DrawerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerConfiguration.swift; sourceTree = "<group>"; };
 		ADF5965D21E77D2B00FE1C17 /* RNPaintBoardLibrary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNPaintBoardLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
 		ADF5966021E78B7200FE1C17 /* RNTPaintBoardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTPaintBoardManager.m; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* RNPaintBoardLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPaintBoardLibrary.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNPaintBoardLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPaintBoardLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +74,6 @@
 				ADF5964821E77BCD00FE1C17 /* API */,
 				ADF5964721E77BC600FE1C17 /* Models */,
 				ADF5965D21E77D2B00FE1C17 /* RNPaintBoardLibrary-Bridging-Header.h */,
-				B3E7B5881CC2AC0600A0062D /* RNPaintBoardLibrary.h */,
-				B3E7B5891CC2AC0600A0062D /* RNPaintBoardLibrary.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				ADF5965921E77CC000FE1C17 /* PaintBoard.swift */,
+				AD148D3521EB40A90036A887 /* RNTPaintBoardManager.swift */,
 				ADF5966021E78B7200FE1C17 /* RNTPaintBoardManager.m */,
 			);
 			path = Views;
@@ -185,7 +183,7 @@
 				ADF5965221E77CA200FE1C17 /* DrawingPersistence.swift in Sources */,
 				ADF5966121E78B7200FE1C17 /* RNTPaintBoardManager.m in Sources */,
 				ADF5964E21E77C5800FE1C17 /* EasyViews.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* RNPaintBoardLibrary.m in Sources */,
+				AD148D3621EB40A90036A887 /* RNTPaintBoardManager.swift in Sources */,
 				ADF5965C21E77CCD00FE1C17 /* DrawerConfiguration.swift in Sources */,
 				ADF5965021E77C9800FE1C17 /* ColorPalette.swift in Sources */,
 				ADF5965421E77CAA00FE1C17 /* Line.swift in Sources */,

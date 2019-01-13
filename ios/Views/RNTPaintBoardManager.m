@@ -10,15 +10,5 @@
 #import "RNPaintBoardLibrary-Swift.h"
 #import <React/RCTViewManager.h>
 
-@interface RNTPaintBoardManager : RCTViewManager
-@end
-
-@implementation RNTPaintBoardManager
-
-RCT_EXPORT_MODULE()
-
-- (UIView *)view {
-    return [[PaintBoard alloc] initWithBackgorundColor:UIColor.whiteColor];
-}
-
+@interface RCT_EXTERN_MODULE(RNTPaintBoardManager, RCTViewManager)
 @end
