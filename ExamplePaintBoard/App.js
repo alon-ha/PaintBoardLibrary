@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, requireNativeComponent, findNodeHandle, NativeModules } from 'react-native';
+import { StyleSheet, requireNativeComponent, NativeModules } from 'react-native';
 import { View, Text, Button } from 'react-native-ui-lib';
 const RNTPaintBoard = requireNativeComponent('RNTPaintBoard')
 const paintBoardManager = NativeModules.RNTPaintBoardManager
