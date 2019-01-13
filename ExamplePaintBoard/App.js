@@ -7,8 +7,10 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, requireNativeComponent } from 'react-native';
 import { View, Text, Button } from 'react-native-ui-lib';
+
+const RNTPaintBoard = requireNativeComponent('RNTPaintBoard', null);
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -27,39 +29,51 @@ export default class App extends Component<Props> {
 
   render() {
     return (
-      <View flex>
-        <Text
-          text30
-          dark20>
-          Draw Something:
-      </Text>
-        <View flex>
-          <Button
-            onPress={this.clear}
-            label="Clear"
-            text30
-            dark20
-            bg-red70
-          />
-          <Button
-            onPress={this.load}
-            label="Load"
-            text30
-            dark20
-            bg-red70
-          />
-          <Button
-            onPress={this.save}
-            label="Save"
-            text30
-            dark20
-            bg-red70
-          />
-        </View>
-      </View>
+      <RNTPaintBoard style={{ flex: 1 }} />
     );
   }
 }
+
+//   render() {
+//     return (
+//       <View flex useSafeArea>
+//         <View padding-24>
+//           <Text
+//             text30
+//             dark20
+//           >
+//             Draw Something:
+//       </Text>
+//         </View>
+//         <RNTPaintBoard style={{ flex: 1 }} />
+//         <View padding-24 row>
+//           <Button
+//             onPress={this.clear}
+//             label="Clear"
+//             text40
+//             dark20
+//             bg-blue50
+//           />
+//           <Button
+//             onPress={this.load}
+//             label="Load"
+//             text40
+//             dark20
+//             bg-blue50
+//           />
+//           <Button
+//             onPress={this.save}
+//             label="Save"
+//             text40
+//             dark20
+//             bg-blue50
+//           />
+//         </View>
+//       </View>
+//     );
+//   }
+// }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -68,4 +82,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
+  paintBoard: {
+    height: 300
+  }
 });

@@ -21,6 +21,7 @@ import UIKit
         self.drawer = Drawer()
         self.persistence = DrawingPersistence()
         super.init(frame: .zero)
+        self.drawer.set(board: self)
         self.backgroundColor = backgorundColor
     }
     
