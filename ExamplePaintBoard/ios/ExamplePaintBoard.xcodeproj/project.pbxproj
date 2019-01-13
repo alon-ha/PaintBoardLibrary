@@ -36,9 +36,9 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ExamplePaintBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ExamplePaintBoardTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		798A8FE2C555405F80686020 /* libRNPaintBoardLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE17A49A4C4474CB7593476 /* libRNPaintBoardLibrary.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C3820EE9914F40F48410E799 /* libRNPaintBoardLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC0C8891A074B1188AFFFF5 /* libRNPaintBoardLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,9 +308,9 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		AD148DB921EB47220036A887 /* PBXContainerItemProxy */ = {
+		AD148DFB21EB47E50036A887 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52ABA0860B1A460B9CDD11B2 /* RNPaintBoardLibrary.xcodeproj */;
+			containerPortal = 49AEECF6FCB54B8C98F409CA /* RNPaintBoardLibrary.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNPaintBoardLibrary;
@@ -347,11 +347,11 @@
 		2D02E47B1E0B4A5D006451C7 /* ExamplePaintBoard-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExamplePaintBoard-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ExamplePaintBoard-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExamplePaintBoard-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		52ABA0860B1A460B9CDD11B2 /* RNPaintBoardLibrary.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNPaintBoardLibrary.xcodeproj; path = "../node_modules/react-native-paint-board-library/ios/RNPaintBoardLibrary.xcodeproj"; sourceTree = "<group>"; };
+		49AEECF6FCB54B8C98F409CA /* RNPaintBoardLibrary.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNPaintBoardLibrary.xcodeproj; path = "../node_modules/react-native-paint-board-library/ios/RNPaintBoardLibrary.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8CE17A49A4C4474CB7593476 /* libRNPaintBoardLibrary.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNPaintBoardLibrary.a; sourceTree = "<group>"; };
+		9FC0C8891A074B1188AFFFF5 /* libRNPaintBoardLibrary.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNPaintBoardLibrary.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -380,7 +380,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				798A8FE2C555405F80686020 /* libRNPaintBoardLibrary.a in Frameworks */,
+				C3820EE9914F40F48410E799 /* libRNPaintBoardLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +567,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				52ABA0860B1A460B9CDD11B2 /* RNPaintBoardLibrary.xcodeproj */,
+				49AEECF6FCB54B8C98F409CA /* RNPaintBoardLibrary.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -610,15 +610,15 @@
 		AD148CBB21EB357E0036A887 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				8CE17A49A4C4474CB7593476 /* libRNPaintBoardLibrary.a */,
+				9FC0C8891A074B1188AFFFF5 /* libRNPaintBoardLibrary.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		AD148DB621EB47220036A887 /* Products */ = {
+		AD148DF821EB47E50036A887 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD148DBA21EB47220036A887 /* libRNPaintBoardLibrary.a */,
+				AD148DFC21EB47E50036A887 /* libRNPaintBoardLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -792,8 +792,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = AD148DB621EB47220036A887 /* Products */;
-					ProjectRef = 52ABA0860B1A460B9CDD11B2 /* RNPaintBoardLibrary.xcodeproj */;
+					ProductGroup = AD148DF821EB47E50036A887 /* Products */;
+					ProjectRef = 49AEECF6FCB54B8C98F409CA /* RNPaintBoardLibrary.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1059,11 +1059,11 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AD148DBA21EB47220036A887 /* libRNPaintBoardLibrary.a */ = {
+		AD148DFC21EB47E50036A887 /* libRNPaintBoardLibrary.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNPaintBoardLibrary.a;
-			remoteRef = AD148DB921EB47220036A887 /* PBXContainerItemProxy */;
+			remoteRef = AD148DFB21EB47E50036A887 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
