@@ -9,8 +9,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, requireNativeComponent } from 'react-native';
 import { View, Text, Button } from 'react-native-ui-lib';
-
-const RNTPaintBoard = requireNativeComponent('RNTPaintBoard', null);
+import RNTPaintBoard from 'react-native-paint-board-library/PaintBoard'
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -26,7 +25,7 @@ export default class App extends Component<Props> {
   save = () => {
 
   }
-  
+
   render() {
     return (
       <View flex useSafeArea>
@@ -38,8 +37,8 @@ export default class App extends Component<Props> {
             Draw Something:
       </Text>
         </View>
-        <RNTPaintBoard style={styles.wrapper} />
-        <View padding-24 row>
+        <RNTPaintBoard style={{ flex: 1 }} />
+        <View style = {styles.btnsContainer}>
           <Button
             onPress={this.clear}
             label="Clear"
@@ -69,13 +68,10 @@ export default class App extends Component<Props> {
 
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
+  btnsContainer: {
+    paddingTop: 12,
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  wrapper: {
-    flex: 1, alignItems: "center", justifyContent: "center"
   }
 });
