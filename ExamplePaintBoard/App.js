@@ -7,15 +7,17 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, requireNativeComponent } from 'react-native';
+import { StyleSheet, requireNativeComponent, findNodeHandle } from 'react-native';
 import { View, Text, Button } from 'react-native-ui-lib';
-import RNTPaintBoard from 'react-native-paint-board-library/PaintBoard'
+const RNTPaintBoard = requireNativeComponent('RNTPaintBoard')
+
 
 type Props = {};
+
 export default class App extends Component<Props> {
 
   clear = () => {
-
+    RNTPaintBoard.clear(findNodeHandle(this))
   }
 
   load = () => {
